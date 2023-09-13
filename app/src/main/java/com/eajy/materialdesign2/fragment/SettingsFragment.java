@@ -34,10 +34,8 @@ public class SettingsFragment extends PreferenceFragmentCompat implements Prefer
     @Override
     public boolean onPreferenceTreeClick(Preference preference) {
         if (preference.getKey() != null) {
-            switch (preference.getKey()) {
-                case "pref_click":
-                    Snackbar.make(getListView(), getString(R.string.pref_on_preference_click), Snackbar.LENGTH_SHORT).show();
-                    break;
+            if ("pref_click".equals(preference.getKey())) {
+                Snackbar.make(getListView(), getString(R.string.pref_on_preference_click), Snackbar.LENGTH_SHORT).show();
             }
             return true;
         }

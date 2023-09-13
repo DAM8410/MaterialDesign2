@@ -81,7 +81,7 @@ public class ShareViewActivity extends BaseActivity {
         card_share_view.setOnTouchListener(touchListener);
     }
 
-    private View.OnTouchListener touchListener = new View.OnTouchListener() {
+    private final View.OnTouchListener touchListener = new View.OnTouchListener() {
         @Override
         public boolean onTouch(View view, MotionEvent motionEvent) {
             switch (motionEvent.getAction()) {

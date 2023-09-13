@@ -31,8 +31,8 @@ import androidx.recyclerview.widget.RecyclerView;
  */
 public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements onMoveAndSwipedListener {
 
-    private Context context;
-    private List<String> mItems;
+    private final Context context;
+    private final List<String> mItems;
     private int color = 0;
     private View parentView;
 
@@ -87,7 +87,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     public RecyclerView.ViewHolder onCreateViewHolder(ViewGroup parent, int viewType) {
         parentView = parent;
         if (viewType == TYPE_NORMAL) {
-            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recycler_view, parent, false);
+            View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.fragment_recycler_view, parent, false);
             return new RecyclerViewHolder(view);
         } else if (viewType == TYPE_FOOTER) {
             View view = LayoutInflater.from(parent.getContext()).inflate(R.layout.item_recycler_footer, parent, false);
@@ -174,8 +174,8 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
 
 
     private class RecyclerViewHolder extends RecyclerView.ViewHolder {
-        private View mView;
-        private RelativeLayout rela_round;
+        private final View mView;
+        private final RelativeLayout rela_round;
 
         private RecyclerViewHolder(View itemView) {
             super(itemView);
@@ -185,7 +185,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     }
 
     private class FooterViewHolder extends RecyclerView.ViewHolder {
-        private ProgressBar progress_bar_load_more;
+        private final ProgressBar progress_bar_load_more;
 
         private FooterViewHolder(View itemView) {
             super(itemView);
@@ -194,7 +194,7 @@ public class RecyclerViewAdapter extends RecyclerView.Adapter<RecyclerView.ViewH
     }
 
     private class HeaderViewHolder extends RecyclerView.ViewHolder {
-        private TextView header_text;
+        private final TextView header_text;
 
         private HeaderViewHolder(View itemView) {
             super(itemView);

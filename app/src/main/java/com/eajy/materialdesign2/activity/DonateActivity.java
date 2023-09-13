@@ -11,7 +11,7 @@ public class DonateActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_donate);
+        setContentView(R.layout.fragment_donation);
         initView();
     }
 

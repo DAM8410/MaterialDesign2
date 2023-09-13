@@ -27,7 +27,7 @@ public class AboutActivity extends BaseActivity implements View.OnClickListener 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_about);
+        setContentView(R.layout.fragment_about);
         Toolbar toolbar = findViewById(R.id.toolbar_about);
         setToolbar(toolbar);
         getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimary));

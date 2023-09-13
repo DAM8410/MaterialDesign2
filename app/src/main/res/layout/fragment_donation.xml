@@ -34,4 +34,3 @@
     <include layout="@layout/content_donate" />
 
 </androidx.coordinatorlayout.widget.CoordinatorLayout>
-

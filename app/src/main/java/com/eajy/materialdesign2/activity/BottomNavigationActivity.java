@@ -24,7 +24,7 @@ public class BottomNavigationActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bottom_navigation);
+        setContentView(R.layout.fragment_bottom_navigation);
         initView();
     }
 
@@ -42,16 +42,16 @@ public class BottomNavigationActivity extends BaseActivity {
         viewList.add(view2);
         viewList.add(view3);
         viewList.add(view4);
-        viewPager = findViewById(R.id.view_pager_bottom_navigation);
+        viewPager = findViewById(R.id.recycler_view_bottom_appbar);
         ViewPagerAdapter adapter = new ViewPagerAdapter(viewList);
         viewPager.setAdapter(adapter);
         viewPager.addOnPageChangeListener(pageChangeListener);
 
-        navigation = findViewById(R.id.bottom_navigation);
+        navigation = findViewById(R.id.bottom_App_bar);
         navigation.setOnNavigationItemSelectedListener(mOnNavigationItemSelectedListener);
     }
 
-    private ViewPager.OnPageChangeListener pageChangeListener = new ViewPager.OnPageChangeListener() {
+    private final ViewPager.OnPageChangeListener pageChangeListener = new ViewPager.OnPageChangeListener() {
         @Override
         public void onPageScrolled(int position, float positionOffset, int positionOffsetPixels) {
             ArgbEvaluator evaluator = new ArgbEvaluator();
@@ -92,7 +92,7 @@ public class BottomNavigationActivity extends BaseActivity {
         }
     };
 
-    private BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
+    private final BottomNavigationView.OnNavigationItemSelectedListener mOnNavigationItemSelectedListener = new BottomNavigationView.OnNavigationItemSelectedListener() {
         @Override
         public boolean onNavigationItemSelected(@NonNull MenuItem item) {
             switch (item.getItemId()) {

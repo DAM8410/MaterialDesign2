@@ -11,7 +11,7 @@ public class ItemTouchHelperCallback extends ItemTouchHelper.Callback {
 
     private final int TYPE_NORMAL = 1;
 
-    private onMoveAndSwipedListener moveAndSwipedListener;
+    private final onMoveAndSwipedListener moveAndSwipedListener;
 
     public ItemTouchHelperCallback(onMoveAndSwipedListener listener) {
         this.moveAndSwipedListener = listener;

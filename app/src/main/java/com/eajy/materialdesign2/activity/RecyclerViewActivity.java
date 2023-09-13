@@ -36,7 +36,7 @@ public class RecyclerViewActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_recycler_view);
+        setContentView(R.layout.fragment_recycler_view);
         Toolbar toolbar = findViewById(R.id.toolbar_recycler_view);
         setToolbar(toolbar);
         initData();

@@ -10,7 +10,7 @@ import androidx.viewpager.widget.PagerAdapter;
 
 public class ViewPagerAdapter extends PagerAdapter {
 
-    private List<View> viewList;
+    private final List<View> viewList;
 
     public ViewPagerAdapter(List<View> viewList) {
         this.viewList = viewList;

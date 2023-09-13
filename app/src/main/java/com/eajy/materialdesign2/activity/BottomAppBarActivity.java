@@ -37,7 +37,7 @@ public class BottomAppBarActivity extends BaseActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.activity_bottom_app_bar);
+        setContentView(R.layout.fragment_bottom_navigation);
         initData();
         initViews();
     }
