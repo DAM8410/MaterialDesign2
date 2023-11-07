@@ -19,22 +19,22 @@
     <item
         android:id="@+id/action_fragment_recycler_view"
         android:orderInCategory="4"
-        android:title="Recycler View"
+        android:title="@string/nav_fragment_recycler_view"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_fragment_scrolling"
         android:orderInCategory="5"
-        android:title="Scrolling"
+        android:title="@string/nav_scrolling"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_fragment_settings"
         android:orderInCategory="6"
-        android:title="Settings"
+        android:title="@string/nav_settings"
         app:showAsAction="never" />
     <item
         android:id="@+id/action_fragment_bottom_navigation"
         android:orderInCategory="7"
-        android:title="Bottom Navigation"
+        android:title="@string/nav_bottom_navigation"
         app:showAsAction="never" />
 
 </menu>
