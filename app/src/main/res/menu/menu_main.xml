@@ -7,12 +7,12 @@
         android:title="@string/nav_about"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_menu_main_donate"
+        android:id="@+id/action_fragment_donate"
         android:orderInCategory="2"
         android:title="@string/nav_donate"
         app:showAsAction="never" />
     <item
-        android:id="@+id/action_menu_main_my_app"
+        android:id="@+id/action_fragment_my_app"
         android:orderInCategory="3"
         android:title="@string/nav_my_apps"
         app:showAsAction="never" />
@@ -36,4 +36,5 @@
         android:orderInCategory="7"
         android:title="Bottom Navigation"
         app:showAsAction="never" />
+
 </menu>

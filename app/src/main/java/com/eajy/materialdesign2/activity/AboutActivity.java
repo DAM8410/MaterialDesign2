@@ -1,6 +1,7 @@
 package com.eajy.materialdesign2.activity;
 
 import android.app.Dialog;
+import android.app.Fragment;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
@@ -22,12 +23,11 @@ import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import androidx.appcompat.widget.Toolbar;
 
 
-public class AboutActivity extends BaseActivity implements View.OnClickListener {
+public class AboutActivity extends Fragment implements View.OnClickListener {
 
     @Override
-    protected void onCreate(Bundle savedInstanceState) {
-        super.onCreate(savedInstanceState);
-        setContentView(R.layout.fragment_about);
+    public void onStart() {
+        super.onStart();
         Toolbar toolbar = findViewById(R.id.toolbar_about);
         setToolbar(toolbar);
         getWindow().setNavigationBarColor(getResources().getColor(R.color.colorPrimary));
